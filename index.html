@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" rel="stylesheet">
+    <title>Rock Paper Scissor</title>
+</head>
+<body>
+    <h1>Rock Paper Scissor</h1>
+    <div id="ALL">
+    <div id="player-all">
+    <div class="player-choice" id="player">
+        <button onclick="showimage('./Assets/fist.png',event)" data-value="1">
+        <img class="options" src="./Assets/fist.png" alt="rock">
+        </button>
+        <button onclick="showimage('./Assets/hand-paper.png',event)" data-value="2">
+        <img class="options" src="./Assets/hand-paper.png" alt="paper">
+        </button>
+        <button onclick="showimage('./Assets/scissors.png',event)" data-value="3">
+        <img class="options" src="./Assets/scissors.png" alt="scissors">
+        </button>
+    </div>
+    <div id="player-result">
+       
+    </div>
+    </div>
+    <div id="computer">
+        <div id="computer-result">
+           
+        </div>
+        <div class="computer-choice" id="computar">
+            <button >
+            <img class="options" src="./Assets/fist.png" alt="rock">
+            </button>
+            <button >
+            <img class="options" src="./Assets/hand-paper.png" alt="paper">
+            </button>
+            <button >
+            <img class="options" src="./Assets/scissors.png" alt="scissors" style="transform: scaleX(-1);">
+            </button>
+        </div>
+        
+    </div>
+    <div id="results"></div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
